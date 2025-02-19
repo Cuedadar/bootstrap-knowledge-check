@@ -23,6 +23,7 @@
       <nav class="navbar navbar-expand-sm bg-success-subtle">
         <!-- Navbar Div -->
         <div class="container-fluid">
+          <!-- Logo Anchor -->
           <a class="navbar-brand w-25" href="index.html"
             ><img
               src="assets/nav-bar-logo.png"
@@ -61,12 +62,17 @@
         <!-- End Navbar Div -->
       </nav>
     </header>
+
     <main class="container">
-      <h1 class="text-success d-flex justify-content-center">
+      <!-- Main Header - flex centered -->
+      <h1 class="text-success d-flex justify-content-center my-3">
         Sign Up to Playtest!
       </h1>
+      <!-- Start Form -->
       <form class="needs-validation" novalidate>
+        <!-- Start Name Row -->
         <div class="row">
+          <!-- Start First Name -->
           <div class="mb-3 col-md-6">
             <label for="firstNameInput" class="form-label">First Name</label>
             <input
@@ -80,27 +86,33 @@
             />
             <div class="invalid-feedback">Please check your First Name</div>
           </div>
-
+          <!-- End First Name -->
+           <!-- Start Last Name -->
           <div class="mb-3 col-md-6">
             <label for="lastNameInput" class="form-label">Last Name</label>
             <input
               type="text"
               class="form-control"
               id="lastNameInput"
+              name="lastName"
               aria-describedby="lastNamePlaytest"
               placeholder="e.g. Doe"
               required
             />
             <div class="invalid-feedback">Please check your Last Name</div>
           </div>
+          <!-- End Last Name -->
         </div>
+        <!-- End Name Row -->
 
+        <!-- Start Email Row -->
         <div class="row mx-1 mb-3">
           <label for="emailInput" class="form-label">Email</label>
           <input
             type="email"
             class="form-control"
             id="emailInput"
+            name="email"
             aria-describedby="emailPlaytest"
             placeholder="jdoe@example.com"
             required
@@ -110,22 +122,32 @@
             We will never share your email
           </div>
         </div>
-
+        <!-- End Email Row -->
+         <!-- Start Password Row -->
         <div class="row mx-1 mb-3">
           <label for="passwordInput" class="form-label">Password</label>
           <input
             type="password"
             class="form-control"
             id="passwordInput"
+            name="password"
             aria-describedby="passwordPlaytest"
             required
           />
           <div class="invalid-feedback">Please input a valid password</div>
         </div>
+        <!-- End Password Row -->
+
+        <!-- Start Submit Row -->
         <div class="row mx-1 mb-3">
           <button class="btn btn-success" type="submit">Submit</button>
         </div>
+        <!-- End Submit Row -->
       </form>
+      <!-- End Form -->
+
+
+
     </main>
     <footer>
       <!-- place footer here -->
