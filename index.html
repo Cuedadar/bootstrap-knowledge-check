@@ -23,11 +23,13 @@
         <!-- Navbar Div -->
         <div class="container-fluid">
           <!-- Logo Anchor -->
-          <a class="navbar-brand w-25" href="index.html"
+          <a class="navbar-brand" href="index.html"
             ><img
               src="assets/nav-bar-logo.png"
               alt="Game Logo"
-              class="img-fluid m-0"
+              class="img-fluid"
+              width="288"
+              height="90"
           /></a>
           <button
             class="navbar-toggler"
@@ -84,15 +86,18 @@
             land. Please, answer our call!&quot;
           </p>
         </article>
-        <article
-          class="container-fluid mx-auto d-flex justify-content-center my-2"
-        >
-          <button type="button" class="btn btn-success me-1" onclick="location.href='contact.html';">
+        <article class="container mx-auto d-flex justify-content-center my-2">
+          <button
+            type="button"
+            class="btn btn-success me-1"
+            onclick="location.href='contact.html';"
+          >
             Sign the Waitlist
           </button>
           <button
             type="button"
-            class="btn btn-secondary d-none d-md-inline ms-1" onclick="location.href='about.html';"
+            class="btn btn-secondary d-none d-md-inline ms-1"
+            onclick="location.href='about.html';"
           >
             About
           </button>
@@ -101,6 +106,9 @@
     </main>
     <footer>
       <!-- place footer here -->
+      <div class="container-fluid d-flex justify-content-center">
+        <p>&copy;John King 2005</p>
+       </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
